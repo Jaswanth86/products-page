@@ -47,7 +47,7 @@ function App() {
       setTimeout(() => setNotification(''), 10000);
     } else if (subtotal < THRESHOLD && hasFreeGift) {
       setCart(prevCart => prevCart.filter(item => item.id !== FREE_GIFT.id));
-    }
+    }// eslint-disable-next-line 
   }, [cart]);
 
   // Handle quantity change in the product list
